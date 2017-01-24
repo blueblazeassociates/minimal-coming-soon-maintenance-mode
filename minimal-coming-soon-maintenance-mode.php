@@ -4,7 +4,7 @@
  * Plugin Name:       Minimal Coming Soon & Maintenance Mode
  * Plugin URI:        https://wordpress.org/plugins/minimal-coming-soon-maintenance-mode/
  * Description:       Simply awesome coming soon & maintenance mode plugin for your WordPress blog. Try it to know why there is no other plugin like this one.
- * Version:           1.2
+ * Version:           1.2.0.1
  * Author:            WebFactory
  * Author URI:        http://www.webfactoryltd.com
  * License:           GPLv3
@@ -161,6 +161,6 @@ require SIGNALS_CSMM_PATH . 'framework/public/init.php';
 
 function csmm_get_plugin_version() {
   $plugin_data = get_file_data(__FILE__, array('version' => 'Version'), 'plugin');
-     
+
   return $plugin_data['version'];
 } // csmm_get_plugin_version
