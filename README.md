@@ -3,7 +3,7 @@ Minimal Coming Soon & Maintenance Mode
 
 This is a fork of the Minimal Coming Soon & Maintenance Mode plugin.
 
-Read the original readme.txt for more information about it.
+Read the original [readme.txt](readme.txt) for more information about it.
 
 Changes:
 
