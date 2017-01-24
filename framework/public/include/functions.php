@@ -9,20 +9,16 @@
 
 function csmm_render_template( $options ) {
 
-	// Fix for WP Super Cache plugin
+	// Fix for W3 Total Cache plugin
 	if ( function_exists( 'wp_cache_clear_cache' ) ) {
-		if ( ob_get_length() > 0 ) {
-			ob_end_clean();
-		}
+		ob_end_clean();
 		wp_cache_clear_cache();
 	}
 
 
-	// Fix for W3 Total Cache plugin
+	// Fix for WP Super Cache plugin
 	if ( function_exists( 'w3tc_pgcache_flush' ) ) {
-		if ( ob_get_length() > 0 ) {
-			ob_end_clean();
-		}
+		ob_end_clean();
 		w3tc_pgcache_flush();
 	}
 
