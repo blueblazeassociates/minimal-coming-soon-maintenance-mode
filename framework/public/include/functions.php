@@ -1,12 +1,5 @@
 <?php
 
-/*
- * Modified by Blue Blaze Associates, LLC
- *
- * Changes:
- * * Fixed small bug in plugin framework regarding using ob_end_clean().  Flagged by egifford 2017_01_24.
- */
-
 /**
  * Required functions for the plugin.
  *
@@ -16,24 +9,23 @@
 
 function csmm_render_template( $options ) {
 
-// BEGIN egifford 2017_01_24
 	// Fix for WP Super Cache plugin
 	if ( function_exists( 'wp_cache_clear_cache' ) ) {
-	  if ( ob_get_length() > 0 ) {
-	    ob_end_clean();
-	  }
+		if ( ob_get_length() > 0 ) {
+			ob_end_clean();
+		}
 		wp_cache_clear_cache();
 	}
 
 
 	// Fix for W3 Total Cache plugin
 	if ( function_exists( 'w3tc_pgcache_flush' ) ) {
-	  if ( ob_get_length() > 0 ) {
-	    ob_end_clean();
-	  }
+		if ( ob_get_length() > 0 ) {
+			ob_end_clean();
+		}
 		w3tc_pgcache_flush();
 	}
-// END egifford 2017_01_24
+
 
 	/**
 	 * Using the nocache_headers() to ensure that different nocache headers are sent to different browsers.
