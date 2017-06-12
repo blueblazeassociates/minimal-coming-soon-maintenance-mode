@@ -8,19 +8,24 @@
  */
 
 function csmm_render_template( $options ) {
-
-	// Fix for W3 Total Cache plugin
-	if ( function_exists( 'wp_cache_clear_cache' ) ) {
-		ob_end_clean();
-		wp_cache_clear_cache();
-	}
-
-
-	// Fix for WP Super Cache plugin
-	if ( function_exists( 'w3tc_pgcache_flush' ) ) {
-		ob_end_clean();
-		w3tc_pgcache_flush();
-	}
+  if (function_exists('w3tc_pgcache_flush')) {
+    ob_end_clean();
+    w3tc_pgcache_flush(); 
+  } 
+  if (function_exists('wp_cache_clean_cache')) {
+    global $file_prefix;
+    ob_end_clean();
+    wp_cache_clean_cache($file_prefix); 
+  }
+  if (function_exists('wp_cache_clear_cache')) {
+    ob_end_clean();
+    wp_cache_clear_cache();
+  }
+  if (class_exists('Endurance_Page_Cache')) {
+    ob_end_clean();
+    $epc = new Endurance_Page_Cache;
+    $epc->purge_all();  
+  }
 
 
 	/**

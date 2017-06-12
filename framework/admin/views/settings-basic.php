@@ -30,6 +30,22 @@
 					<p class="signals-form-help-block"><?php _e( 'Provide title for the maintenance page.', 'signals' ); ?></p>
 				</div>
 			</div>
+      
+      <div class="signals-double-group signals-clearfix">
+        <div class="signals-form-group">
+          <label for="signals_csmm_showlogged" class="signals-strong"><?php _e( 'Show normal website to logged in users?', 'signals' ); ?></label>
+          <input id="signals_csmm_showlogged" type="checkbox" class="signals-form-ios" name="signals_csmm_showlogged" value="1"<?php checked( '1', $signals_csmm_options['show_logged_in'] ); ?>>
+
+          <p class="signals-form-help-block"><?php _e( 'Enable this option if you want logged in users to view the website normally while visitors see the maintenance page.', 'signals' ); ?></p>
+        </div>
+
+        <div class="signals-form-group">
+          <label for="signals_csmm_excludese" class="signals-strong"><?php _e( 'Exclude Search Engines?', 'signals' ); ?></label>
+          <input type="checkbox" class="signals-form-ios" name="signals_csmm_excludese" id="signals_csmm_excludese" value="1"<?php checked( '1', $signals_csmm_options['exclude_se'] ); ?>>
+
+          <p class="signals-form-help-block"><?php _e( 'Do you want to exclude search engines from viewing maintenance page? This will enable search engines to view your regular website and not the Maintenance Mode page even if the plugin is enabled.', 'signals' ); ?></p>
+        </div>
+      </div>
 
 			<div class="signals-double-group signals-clearfix">
 				<div class="signals-form-group">
@@ -60,22 +76,6 @@
 					<input type="text" name="signals_csmm_custom_login" id="signals_csmm_custom_login" value="<?php echo esc_attr_e( $signals_csmm_options['custom_login_url'] ); ?>" placeholder="<?php esc_attr_e( 'Custom login URL', 'signals' ); ?>" class="signals-form-control">
 
 					<p class="signals-form-help-block"><?php _e( 'In case you are using any plugin for custom login, provide your custom login URL over here. This plugin should be able to detect your custom login automatically in most of the situations. In case it fails to do so, you can provide the custom login URL over here.', 'signals' ); ?></p>
-				</div>
-			</div>
-
-			<div class="signals-double-group signals-clearfix">
-				<div class="signals-form-group">
-					<label for="signals_csmm_showlogged" class="signals-strong"><?php _e( 'Show normal website to logged in users?', 'signals' ); ?></label>
-					<input type="checkbox" class="signals-form-ios" name="signals_csmm_showlogged" value="1"<?php checked( '1', $signals_csmm_options['show_logged_in'] ); ?>>
-
-					<p class="signals-form-help-block"><?php _e( 'Enable this option if you want logged in users to view the website normally while visitors see the maintenance page.', 'signals' ); ?></p>
-				</div>
-
-				<div class="signals-form-group">
-					<label for="signals_csmm_excludese" class="signals-strong"><?php _e( 'Exclude Search Engines?', 'signals' ); ?></label>
-					<input type="checkbox" class="signals-form-ios" name="signals_csmm_excludese" id="signals_csmm_excludese" value="1"<?php checked( '1', $signals_csmm_options['exclude_se'] ); ?>>
-
-					<p class="signals-form-help-block"><?php _e( 'Do you want to exclude search engines from viewing maintenance page? This will enable search engines to view your regular website and not the Maintenance Mode page even if the plugin is enabled.', 'signals' ); ?></p>
 				</div>
 			</div>
 

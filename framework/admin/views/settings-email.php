@@ -17,9 +17,10 @@
 		<div class="signals-section-content">
 			<div class="signals-form-group">
 				<label for="signals_csmm_api" class="signals-strong"><?php _e( 'MailChimp API', 'signals' ); ?></label>
-				<input type="text" name="signals_csmm_api" id="signals_csmm_api" value="<?php esc_attr_e( $signals_csmm_options['mailchimp_api'] ); ?>" placeholder="<?php esc_attr_e( 'MailChimp API', 'signals' ); ?>" class="signals-form-control">
+				<input type="text" name="signals_csmm_api" id="signals_csmm_api" value="<?php esc_attr_e( $signals_csmm_options['mailchimp_api'] ); ?>" placeholder="<?php esc_attr_e( 'MailChimp API key', 'signals' ); ?>" class="signals-form-control">
 
-				<p class="signals-form-help-block"><?php _e( 'Provide your MailChimp API over here.', 'signals' ); ?> <a href="http://kb.mailchimp.com/accounts/management/about-api-keys" target="_blank"><?php _e( 'Click here', 'signals' ); ?></a> <?php _e( 'to know how to get this information. In case you don\'t want to enable subscription option, just leave this field blank.', 'signals' ); ?></p>
+				<p class="signals-form-help-block"><?php _e( 'Enter your MailChimp API key.', 'signals' ); ?> Open your <a href="https://us2.admin.mailchimp.com/account/api/" target="_blank"><?php _e( 'MailChimp profile', 'signals' ); ?></a> <?php _e( 'to get the API key. If you don\'t want to enable the subscription option, leave this field blank.', 'signals' ); ?></p>
+        <p><button type="submit" name="signals_csmm_submit" class="signals-btn"><?php _e( 'Save API key &amp; refresh mailing lists', 'signals' ); ?></button></p>
 			</div>
 
 			<div class="signals-form-group">
@@ -38,9 +39,9 @@
 						);
 
 						if ( ! $signals_lists ) {
-							echo '<p class="signals-form-help-block">' . __( 'There was an error communicating with the MailChimp server. Please make sure that the API Key used is correct and try again.', 'signals' ) . '</p>';
+							echo '<p class="signals-form-help-block">' . __( '<b>Error</b> fetching mailing lists. Please make sure that the API key you entered is correct and try again.', 'signals' ) . '</p>';
 						} else if ( $signals_lists['total'] == 0 ) {
-							echo '<p class="signals-form-help-block">' . __( 'It seems that there is no list created for this account. Why not create one on the MailChimp website and then try here.', 'signals' ) . '</p>';
+							echo '<p class="signals-form-help-block">' . __( 'It seems that there is no list created for this account. Create one on the MailChimp website and then try again.', 'signals' ) . '</p>';
 						} else {
 							echo '<select name="signals_csmm_list" id="signals_csmm_list">';
 
@@ -49,10 +50,10 @@
 							}
 
 							echo '</select>';
-							echo '<p class="signals-form-help-block">' . __( 'Select your MailChimp list in which you would like to store the subscribers data.', 'signals' ) . '</p>';
+							echo '<p class="signals-form-help-block">' . __( 'Select the MailChimp list in which you want to store the subscriber data.', 'signals' ) . '</p>';
 						}
 					} else {
-						echo '<p class="signals-form-help-block">' . __( 'Provide your MailChimp API key in the above box and click on `Save Changes` option. Your lists will appear over here.', 'signals' ) . '</p>';
+						echo '<p class="signals-form-help-block">' . __( 'Enter your MailChimp API key in the field above and click "Save API key". Your lists will refresh and appear here.', 'signals' ) . '</p>';
 					}
 
 				?>

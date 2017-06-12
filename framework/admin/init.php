@@ -50,12 +50,12 @@ add_action( 'admin_menu', 'csmm_add_menu' );
 // Registering JS and CSS files over here
 function csmm_admin_scripts() {
 
-	wp_register_style( 'csmm-admin-base', SIGNALS_CSMM_URL . '/framework/admin/css/admin.css', false, '1.0' );
+	wp_register_style( 'csmm-admin-base', SIGNALS_CSMM_URL . '/framework/admin/css/admin.css', false, csmm_get_plugin_version() );
 
-	wp_register_script( 'csmm-webfonts', '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js', false, '1.0' );
-	wp_register_script( 'csmm-admin-editor', SIGNALS_CSMM_URL . '/framework/admin/js/editor/ace.js', false, '1.0', true );
-	wp_register_script( 'csmm-admin-color', SIGNALS_CSMM_URL . '/framework/admin/js/colorpicker/jscolor.js', false, '1.0', true );
-	wp_register_script( 'csmm-admin-base', SIGNALS_CSMM_URL . '/framework/admin/js/admin.js', 'jquery', '1.0', true );
+	wp_register_script( 'csmm-webfonts', '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js', false, csmm_get_plugin_version() );
+	wp_register_script( 'csmm-admin-editor', SIGNALS_CSMM_URL . '/framework/admin/js/editor/ace.js', false, csmm_get_plugin_version(), true );
+	wp_register_script( 'csmm-admin-color', SIGNALS_CSMM_URL . '/framework/admin/js/colorpicker/jscolor.js', false, csmm_get_plugin_version(), true );
+	wp_register_script( 'csmm-admin-base', SIGNALS_CSMM_URL . '/framework/admin/js/admin.js', 'jquery', csmm_get_plugin_version(), true );
 
 	// Calling the files
 	wp_enqueue_style( 'csmm-admin-base' );
