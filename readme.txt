@@ -1,9 +1,9 @@
 === Minimal Coming Soon & Maintenance Mode ===
 Contributors: WebFactory
-Tags: coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, newsletter, offline, unavailable, under construction, wordpress coming soon, wordpress maintenance mode, wordpress under construction, mailchimp
+Tags: coming soon, coming soon page, launch page, maintenance mode, mailchimp
 Requires at least: 4.0
-Tested up to: 4.6
-Stable tag: 1.2
+Tested up to: 4.8
+Stable tag: 1.25
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -13,7 +13,7 @@ Simple and flexible Coming Soon & Maintenance Mode plugin for any WordPress site
 == Description ==
 The Minimal Coming Soon & Maintenance Mode plugin allows you to quickly and easily set up a Coming Soon or Launch Page for your website.
 
-It's simple + flexible and works with any WordPress theme & plugin Plus you have full control over the frontend of the website and can modify almost every aspect of it per your preference.
+It's simple + flexible and works with any WordPress theme & plugin, plus you'll have full control over the frontend of the website and can modify almost every aspect of it per your preference. Easily conncets with MailChimp so that you can collect emails from visitors.
 
 
 = Plugin Features =
@@ -40,12 +40,12 @@ It's simple + flexible and works with any WordPress theme & plugin Plus you have
 
 == Installation ==
 
-To manually install this plugin, please follow the instructions below.
+To manually install the plugin, please do the following:
 
 1. Upload `minimal-coming-soon-maintenance-mode` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Go to the 'Maintenance Mode' under 'Admin' panel.
-4. Configure the plugin and start enjoying it.
+4. Configure the plugin and start using it.
 
 
 == Frequently Asked Questions ==
@@ -53,6 +53,10 @@ To manually install this plugin, please follow the instructions below.
 = Having issues with the plugin? =
 
 Please use the <a href="https://wordpress.org/support/plugin/minimal-coming-soon-maintenance-mode">support forum</a>. We read it all the time.
+
+= Emails not saving in MailChimp? =
+
+Make sure that the name field in MailChimp (FNAME) is not mandatory. Configure it to an optional one.
 
 
 == Screenshots ==
@@ -65,6 +69,11 @@ Please use the <a href="https://wordpress.org/support/plugin/minimal-coming-soon
 
 
 == Changelog ==
+
+= 1.25 =
+* 2017-06-05
+* bug fixes
+* UI enhancements
 
 = 1.2 =
 * 2016-11-22

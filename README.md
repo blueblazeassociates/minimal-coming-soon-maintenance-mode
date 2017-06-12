@@ -12,6 +12,7 @@ Changes:
 
 Branches:
 
-* blueblaze:    tracks the latest changes and tweaks from Blue Blaze.
-* master:       tracks the latest version from the plugin author.
-* 1.2-branch:   tracks Blue Blaze's updates to version 1.2.
+* blueblaze:   tracks the latest changes and tweaks from Blue Blaze.
+* master:      tracks the latest version from the plugin author.
+* 1.25-branch: tracks Blue Blaze's updates to version 1.25.
+* 1.2-branch:  tracks Blue Blaze's updates to version 1.2.
