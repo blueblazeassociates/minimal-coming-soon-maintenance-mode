@@ -5,7 +5,7 @@
  * Plugin URI:          https://github.com/blueblazeassociates/minimal-coming-soon-maintenance-mode
  * Original Plugin URI: https://wordpress.org/plugins/minimal-coming-soon-maintenance-mode/
  * Description:         Simply awesome coming soon & maintenance mode plugin for your WordPress blog. Try it to know why there is no other plugin like this one.
- * Version:             1.25.0.3
+ * Version:             1.25.0.4
  * Author:              WebFactory
  * Author URI:          http://www.webfactoryltd.com
  * License:             GPLv3
