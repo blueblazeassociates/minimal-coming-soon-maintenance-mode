@@ -1,18 +1,19 @@
 <?php
 
 /**
- * Plugin Name:       Minimal Coming Soon & Maintenance Mode
- * Plugin URI:        https://wordpress.org/plugins/minimal-coming-soon-maintenance-mode/
- * Description:       Simply awesome coming soon & maintenance mode plugin for your WordPress blog. Try it to know why there is no other plugin like this one.
- * Version:           1.25
- * Author:            WebFactory
- * Author URI:        http://www.webfactoryltd.com
- * License:           GPLv3
- * License URI:       http://www.gnu.org/licenses/gpl-3.0.txt
- * Text Domain:       signals
- * Domain Path:       /framework/langs/
- * GitHub Plugin URI: https://github.com/blueblazeassociates/minimal-coming-soon-maintenance-mode
- * GitHub Branch:     blueblaze
+ * Plugin Name:         Minimal Coming Soon & Maintenance Mode
+ * Plugin URI:          https://github.com/blueblazeassociates/minimal-coming-soon-maintenance-mode
+ * Original Plugin URI: https://wordpress.org/plugins/minimal-coming-soon-maintenance-mode/
+ * Description:         Simply awesome coming soon & maintenance mode plugin for your WordPress blog. Try it to know why there is no other plugin like this one.
+ * Version:             1.25
+ * Author:              WebFactory
+ * Author URI:          http://www.webfactoryltd.com
+ * License:             GPLv3
+ * License URI:         http://www.gnu.org/licenses/gpl-3.0.txt
+ * Text Domain:         signals
+ * Domain Path:         /framework/langs/
+ * GitHub Plugin URI:   https://github.com/blueblazeassociates/minimal-coming-soon-maintenance-mode
+ * GitHub Branch:       blueblaze
  *
  *
  * Minimal Coming Soon & Maintenance Mode Plugin
