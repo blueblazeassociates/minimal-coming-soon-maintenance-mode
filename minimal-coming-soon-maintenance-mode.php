@@ -49,7 +49,7 @@ define( 'SIGNALS_CSMM_PATH', plugin_dir_path( __FILE__ ) );
  * For the plugin activation & de-activation.
  * We are doing nothing over here.
  */
- 
+
 function csmm_plugin_activation() {
 
 	// Checking if the options exist in the database
@@ -161,6 +161,6 @@ require SIGNALS_CSMM_PATH . 'framework/public/init.php';
 
 function csmm_get_plugin_version() {
   $plugin_data = get_file_data(__FILE__, array('version' => 'Version'), 'plugin');
-     
+
   return $plugin_data['version'];
 } // csmm_get_plugin_version

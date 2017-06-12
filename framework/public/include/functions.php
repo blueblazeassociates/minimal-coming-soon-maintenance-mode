@@ -23,12 +23,12 @@ function csmm_render_template( $options ) {
     w3tc_pgcache_flush();
   }
 
-  if (function_exists('wp_cache_clean_cache')) {
+  if ( function_exists( 'wp_cache_clean_cache' ) ) {
     global $file_prefix;
     if ( ob_get_length() > 0 ) {
       ob_end_clean();
     }
-    wp_cache_clean_cache($file_prefix); 
+    wp_cache_clean_cache( $file_prefix );
   }
 
   if ( function_exists( 'wp_cache_clear_cache' ) ) {
@@ -38,12 +38,12 @@ function csmm_render_template( $options ) {
     wp_cache_clear_cache();
   }
 
-  if (class_exists('Endurance_Page_Cache')) {
+  if ( class_exists( 'Endurance_Page_Cache' ) ) {
     if ( ob_get_length() > 0 ) {
       ob_end_clean();
     }
     $epc = new Endurance_Page_Cache;
-    $epc->purge_all();  
+    $epc->purge_all();
   }
 // END egifford 2017_01_24
 
